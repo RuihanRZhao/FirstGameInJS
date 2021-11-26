@@ -3,17 +3,27 @@
 
 ## How to play
 #### Move
+
 W: up
+
 S: down
+
 A: left
+
 D: right
 
-#### Attack:
+#### Attack
+
 ←: Attack to left
+
 →: Attack to right
+
 ↑: Attack to up
+
 ↓: Attack to down
 
 #### System
+
 M: music
+
 Space: pasue
