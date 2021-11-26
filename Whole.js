@@ -129,18 +129,18 @@ const Game0 = Game => {
     Game.preload = function () {
         //music
         Game.soundFormats('mp3');
-        BGM = Game.loadSound('/Game0/music/Maze');
+        BGM = Game.loadSound('https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game0/music/Maze');
         //image
-        MazeBrickImg = Game.loadImage('/Game0/image/brick.png');
+        MazeBrickImg = Game.loadImage('https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/brick.png');
         for (let i = 0; i < 5; i++) {
-            Floor[i] = Game.loadImage('/Game0/image/' + 'FloorCross' + (i + 1) + '.png');
+            Floor[i] = Game.loadImage('https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/' + 'FloorCross' + (i + 1) + '.png');
         }
-        LinkUpward = Game.loadImage("/Game0/image/Link.png");
-        Bow.Image = Game.loadImage("/Game1/image/Bow.png");
-        Sword.Image = Game.loadImage("/Game1/image/Sword.png");
-        Game0_OS.lifeImg = Game.loadImage("/ShareResourse/image/life.png");
-        Game0_OS.powerImg = Game.loadImage("/ShareResourse/image/power.png");
-        Game0_OS.arrowImg = Game.loadImage("/Game1/image/Arrow.png");
+        LinkUpward = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/Link.png");
+        Bow.Image = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Bow.png");
+        Sword.Image = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Sword.png");
+        Game0_OS.lifeImg = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/ShareResourse/image/life.png");
+        Game0_OS.powerImg = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/ShareResourse/image/power.png");
+        Game0_OS.arrowImg = Game.loadImage("https://github.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Arrow.png");
     }
     Game.setup = function () {
         Game.createCanvas(window.innerWidth, window.innerHeight);
