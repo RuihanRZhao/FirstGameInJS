@@ -129,18 +129,18 @@ const Game0 = Game => {
     Game.preload = function () {
         //music
         Game.soundFormats('mp3');
-        BGM = Game.loadSound('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game0/music/Maze');
+        BGM = Game.loadSound('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game0/music/Maze');
         //image
-        MazeBrickImg = Game.loadImage('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/brick.png');
+        MazeBrickImg = Game.loadImage('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game0/image/brick.png');
         for (let i = 0; i < 5; i++) {
-            Floor[i] = Game.loadImage('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/' + 'FloorCross' + (i + 1) + '.png');
+            Floor[i] = Game.loadImage('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game0/image/' + 'FloorCross' + (i + 1) + '.png');
         }
-        LinkUpward = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game0/image/Link.png");
-        Bow.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Bow.png");
-        Sword.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Sword.png");
-        Game0_OS.lifeImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/ShareResourse/image/life.png");
-        Game0_OS.powerImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/ShareResourse/image/power.png");
-        Game0_OS.arrowImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/tree/master/Game1/image/Arrow.png");
+        LinkUpward = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/master/Game0/image/Link.png");
+        Bow.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game1/image/Bow.png");
+        Sword.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game1/image/Sword.png");
+        Game0_OS.lifeImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/ShareResourse/image/life.png");
+        Game0_OS.powerImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/ShareResourse/image/power.png");
+        Game0_OS.arrowImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game1/image/Arrow.png");
     }
     Game.setup = function () {
         Game.createCanvas(window.innerWidth, window.innerHeight);
