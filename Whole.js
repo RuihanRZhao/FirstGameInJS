@@ -135,7 +135,7 @@ const Game0 = Game => {
         for (let i = 0; i < 5; i++) {
             Floor[i] = Game.loadImage('https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game0/image/' + 'FloorCross' + (i + 1) + '.png');
         }
-        LinkUpward = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/master/Game0/image/Link.png");
+        LinkUpward = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game0/image/Link.png");
         Bow.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game1/image/Bow.png");
         Sword.Image = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/Game1/image/Sword.png");
         Game0_OS.lifeImg = Game.loadImage("https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/ShareResourse/image/life.png");
@@ -611,15 +611,16 @@ const Game1 = Game => {
     Game.preload = function () {
         ////music
         Game.soundFormats('mp3');
-        BGM = Game.loadSound("/Game1/music/" + "BGM" + ".mp3");
-        toS = Game.loadSound("/Game1/music/" + "toS" + ".mp3");
-        toB = Game.loadSound("/Game1/music/" + "toB" + ".mp3");
-        StoH = Game.loadSound("/Game1/music/" + "StoH" + ".mp3");
-        BtoH = Game.loadSound("/Game1/music/" + "BtoH" + ".mp3");
-        HAtk = Game.loadSound("/Game1/music/" + "HAtk" + ".mp3");
-        SAtk = Game.loadSound("/Game1/music/" + "SAtk" + ".mp3");
-        BAtk = Game.loadSound("/Game1/music/" + "BAtk" + ".mp3");
-        Jump = Game.loadSound("/Game1/music/" + "Jump" + ".mp3");
+        var GetLink="https://raw.githubusercontent.com/RyenBZhao/FirstGameInJS/master/";
+        BGM = Game.loadSound(GetLink+"/Game1/music/" + "BGM" + ".mp3");
+        toS = Game.loadSound(GetLink+"/Game1/music/" + "toS" + ".mp3");
+        toB = Game.loadSound(GetLink+"/Game1/music/" + "toB" + ".mp3");
+        StoH = Game.loadSound(GetLink+"/Game1/music/" + "StoH" + ".mp3");
+        BtoH = Game.loadSound(GetLink+"/Game1/music/" + "BtoH" + ".mp3");
+        HAtk = Game.loadSound(GetLink+"/Game1/music/" + "HAtk" + ".mp3");
+        SAtk = Game.loadSound(GetLink+"/Game1/music/" + "SAtk" + ".mp3");
+        BAtk = Game.loadSound(GetLink+"/Game1/music/" + "BAtk" + ".mp3");
+        Jump = Game.loadSound(GetLink+"/Game1/music/" + "Jump" + ".mp3");
         ////images
         ///Link
         //stand
@@ -1225,4 +1226,5 @@ const Game1 = Game => {
         */
     }
 }
-new p5(Game0);
+//new p5(Game0);
+new p5(Game1);
