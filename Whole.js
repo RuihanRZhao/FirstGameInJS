@@ -624,35 +624,35 @@ const Game1 = Game => {
         ////images
         ///Link
         //stand
-        LinkStand = Game.loadImage("Game1/image/stand.png");
+        LinkStand = Game.loadImage(GetLink+"Game1/image/stand.png");
         //walk
         for (let i = 0; i < 8; i++) {
-            LinkRun[i] = Game.loadImage("Game1/image/" + "walk" + (i + 1) + ".png");
+            LinkRun[i] = Game.loadImage(GetLink+"Game1/image/" + "walk" + (i + 1) + ".png");
         }
         //jump
         for (let i = 0; i < 6; i++) {
-            LinkJump[i] = Game.loadImage("Game1/image/" + "jump" + (i + 1) + ".png");
+            LinkJump[i] = Game.loadImage(GetLink+"Game1/image/" + "jump" + (i + 1) + ".png");
         }
         ///Monster
-        Gano.headImg = Game.loadImage("/Game1/image/Head.png");
-        Gano.bodyImg = Game.loadImage("/Game1/image/Body.png");
+        Gano.headImg = Game.loadImage(GetLink+"/Game1/image/Head.png");
+        Gano.bodyImg = Game.loadImage(GetLink+"/Game1/image/Body.png");
         ///Weapon
-        Link.Bow.image = Game.loadImage("Game1/image/" + "Bow" + ".png");
-        Link.Sword.image = Game.loadImage("Game1/image/" + "Sword" + ".png");
-        Link.Hand.image = Game.loadImage("Game1/image/" + "Hand" + ".png");
+        Link.Bow.image = Game.loadImage(GetLink+"Game1/image/" + "Bow" + ".png");
+        Link.Sword.image = Game.loadImage(GetLink+"Game1/image/" + "Sword" + ".png");
+        Link.Hand.image = Game.loadImage(GetLink+"Game1/image/" + "Hand" + ".png");
         //Arrow
-        ArrowImg = Game.loadImage("Game1/image/" + "Arrow" + ".png");
+        ArrowImg = Game.loadImage(GetLink+"Game1/image/" + "Arrow" + ".png");
         //Brick
         for (let i = 0; i < 5; i++) {
-            BrickImg[i] = Game.loadImage("Game1/image/" + "brick" + (i + 1) + ".png");
+            BrickImg[i] = Game.loadImage(GetLink+"Game1/image/" + "brick" + (i + 1) + ".png");
         }
-        BrickImgBas = Game.loadImage("Game1/image/" + "brickBas" + ".png");
+        BrickImgBas = Game.loadImage(GetLink+"Game1/image/" + "brickBas" + ".png");
         //box
-        BoxImg = Game.loadImage("Game1/image/" + "box.png");
+        BoxImg = Game.loadImage(GetLink+"Game1/image/" + "box.png");
         //UI
-        Game1_OS.lifeImg = Game.loadImage("/ShareResourse/image/life.png");
-        Game1_OS.powerImg = Game.loadImage("/ShareResourse/image/power.png");
-        Game1_OS.arrowImg = Game.loadImage("/Game1/image/Arrow.png");
+        Game1_OS.lifeImg = Game.loadImage(GetLink+"/ShareResourse/image/life.png");
+        Game1_OS.powerImg = Game.loadImage(GetLink+"/ShareResourse/image/power.png");
+        Game1_OS.arrowImg = Game.loadImage(GetLink+"/Game1/image/Arrow.png");
     }
     Game.setup = function () {
         Game.createCanvas(window.innerWidth, window.innerHeight);
